@@ -6,16 +6,16 @@ body {
 }
 
 .bg-opacity-dark {
-  background-color: rgba(51, 32, 46, 0.616);
+  background-color: rgba(51, 32, 46, 0.877);
   border: solid black 2px;
 }
 
 .bg-opacity-secondary {
-  background-color: rgba(211, 142, 240, 0.322);
+  background-color: rgba(211, 142, 240, 0.377);
 }
 
 .bg-opacity-tan {
-  background-color: rgba(207, 207, 207, 0.822);
+  background-color: rgba(207, 207, 207, 0.514);
 }
 .container {
   max-width: 960px!important;

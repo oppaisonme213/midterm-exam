@@ -13,9 +13,9 @@
    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-white">
-  <div class="container bg-opacity-dark p-5">
+  
     <div class="header border border-dark bg-opacity-tan p-5 mb-5 mx-4">
-      <h1 class="text-center">MIDTERAMA</h1>
+      <h1 class="text-center">AccuWeather</h1>
 
 
     </div>
@@ -40,27 +40,29 @@
     <div class="border border-dark bg-opacity-tan p-5 my-5 mx-4">
       <div class="results text-center bg-opacity-secondary p-3">
         <div class="row">
-          <div class="col-sm-12"><h3>Search Results</h3></div>
+          <div class="col-sm-12"><h3>Results</h3></div>
         </div>
         <div class="row border-dark m-4">
           @isset($data)
+          
           <div class="col-3"><h4>Country</h4></div>
           <div class="col-9">
             {{print_r($data[0]["Country"]["LocalizedName"])}}
           </div>
-          <div class="col-3"><h4>World Position</h4></div>
-            <div class="col-9">
-
-              <div class="row">
-                <div class="col-4">
-                  <p>Latitude</p>{{print_r($data[0]["GeoPosition"]["Latitude"])}}<br>
-                </div>
-                <div class="col-4">
-                  <p>Longitude</p>{{print_r($data[0]["GeoPosition"]["Longitude"])}}
-                </div>
-              </div>
-            </div>
+          <div class="col-3"><h4>Continent</h4></div>
+          <div class="col-9">
+            {{print_r($data[0]["TimeZone"]["Name"])}}
           </div>
+          <div class="col-3"><h4>Region</h4></div>
+          <div class="col-9">
+            {{print_r($data[0]["AdministrativeArea"]["LocalizedName"])}}
+          </div>
+          <div class="col-3"><h4>Gmt Offset</h4></div>
+          <div class="col-9">
+            {{print_r($data[0]["TimeZone"]["GmtOffset"])}}
+          </div>
+         
+         
 
           @endisset
         </div>

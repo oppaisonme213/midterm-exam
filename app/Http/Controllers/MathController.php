@@ -14,7 +14,7 @@ class MathController extends Controller
 
     public function list(Request $request){
 
-      $token = "AoLAQIfceOZvTL8dQLgLDZkQzr3ONVBY";
+      $token = "p1QrWjNBGuacTlWuk1u4n9dNEK5kYOI0";
       $value1 = $request->input("q");
       $value2 = $request->input("language");
 
