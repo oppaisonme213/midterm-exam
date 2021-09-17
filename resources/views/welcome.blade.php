@@ -13,12 +13,20 @@
    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-white">
-  
-    <div class="header border border-dark bg-opacity-tan p-5 mb-5 mx-4">
-      <h1 class="text-center">AccuWeather</h1>
 
 
+    <div class="content border border-dark bg-opacity-tan p-5 my-5 mx-4">
+     
+        <form action="/" method="get">
+         
+        <h1 class="text-center">MIDTERAMAS</h1>
+          
+        </form>
+      
     </div>
+
+
+
     <div class="content border border-dark bg-opacity-tan p-5 my-5 mx-4">
       <div class="user-input text-center bg-opacity-secondary p-3">
         <form action="/" method="get">
